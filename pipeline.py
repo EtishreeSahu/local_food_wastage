@@ -26,10 +26,10 @@ def parse_date(val):
         return None
 
 # ---------- 1. Load CSVs ----------
-providers = pd.read_csv("data/providers_data.csv")
-receivers = pd.read_csv("data/receivers_data.csv")
-food = pd.read_csv("data/food_listings_data.csv")
-claims = pd.read_csv("data/claims_data.csv")
+providers = pd.read_csv("providers_data.csv")
+receivers = pd.read_csv("receivers_data.csv")
+food = pd.read_csv("food_listings_data.csv")
+claims = pd.read_csv("claims_data.csv")
 
 print("providers shape:", providers.shape)
 print("receivers shape:", receivers.shape)
@@ -142,3 +142,4 @@ conn.execute("PRAGMA foreign_keys = ON;")  # re-enable
 print("Database created & data inserted successfully ✅")
 
 conn.close()
+
